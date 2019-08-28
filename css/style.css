@@ -1,0 +1,62 @@
+*/{
+    padding: 0%;
+    margin: 0%;
+}
+body html{
+    height: 100%;
+}
+.navbar{
+    background: grey;
+}
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: lightgrey;
+    padding-right: 900px;
+  }
+  
+  .footer {
+    background: grey;
+    color: white;
+  }
+  
+  .article{
+    text-align: left;
+    background: whitesmoke;
+  }
+
+  
+.text{
+    color: black;
+}
+  
+  .aside{
+    background: lightgrey;
+  }
+  
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .article   { flex: 3 0px; } 
+    .article   { order: 2; }
+    .aside { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  body {
+    padding: 2em; 
+    color: #000;
+  }
